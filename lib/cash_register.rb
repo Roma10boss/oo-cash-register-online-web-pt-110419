@@ -29,7 +29,7 @@ class CashRegister
       @total = @total - (@total * @discount)
       return " total after discount is $#{@total.to_i}"
     else 
-      return "There was no discount applied"
+      return "there is no discount to apply"
     end 
 end 
     
