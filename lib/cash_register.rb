@@ -10,12 +10,12 @@ class CashRegister
   def add_item(items, price, quantity = 1)
     @price = price 
     @total += price + quantity
-    if quantity = 1 
+      if quantity = 1 
       counter = 0 
-    end 
-  else @items = items
+      end 
+      else @items = items
+      end 
   end 
-end 
 
   def apply_discount 
     if @discount > 0 
@@ -24,10 +24,10 @@ end
       return "Your total after discount is: #{total}."
     else 
       return "there's no discount applied."
-    end 
+  end 
+end 
+    
     def void_last_transaction
       @total -= price 
     end 
-    
-  
 end 
